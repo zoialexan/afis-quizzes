@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quiz Ανακύκλωσης</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="quiz-container">
+    <h1 id="quiz-title">Τι είδους ήρωας της ανακύκλωσης είσαι;</h1>
+    <div id="question-box">
+      <p id="question-text"></p>
+      <div id="answer-buttons"></div>
+    </div>
+    <button id="next-button">Επόμενη ερώτηση</button>
+  </div>
+
+  <div id="result-container" class="hidden">
+    <h2>Ο τύπος ήρωά σου:</h2>
+    <p id="result-text"></p>
+    <p id="result-unlocked"></p>
+    <button onclick="restartQuiz()">Παίξε ξανά</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
