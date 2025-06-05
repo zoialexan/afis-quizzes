@@ -1,64 +1,72 @@
 body {
-    font-family: sans-serif;
-    background: #e0f7e9;
+    font-family: 'Geologica', sans-serif;
+    background-color: #F4EFE9; /* soft cream background */
     margin: 0;
     padding: 20px;
     text-align: center;
+    color: #333;
   }
   
-  #intro-container, #quiz-container, #result-container {
+  #quiz-container, #result-container, #intro-container {
     max-width: 600px;
     margin: 0 auto;
-    background: white;
-    padding: 30px;
+    background: #E1DAC3; /* light beige card */
+    padding: 25px;
     border-radius: 20px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  button {
-    padding: 10px 20px;
-    font-size: 1rem;
-    border-radius: 10px;
-    border: none;
-    margin-top: 20px;
-    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   }
   
   #answer-buttons button {
     display: block;
     width: 100%;
-    margin: 10px 0;
-    padding: 12px;
+    margin: 12px 0;
+    padding: 14px;
     font-size: 1rem;
-    border-radius: 8px;
+    border-radius: 12px;
     border: 2px solid transparent;
-    background-color: #f0f8ff;
+    background-color: #ABBB99; /* muted green */
+    color: white;
+    cursor: pointer;
     transition: background-color 0.3s ease, border 0.3s ease;
   }
   
   #answer-buttons button:hover {
-    background-color: #d9f0ff;
+    background-color: #90A47A; /* darker green on hover */
   }
   
   .selected {
-    border: 2px solid #3399ff;
-    background-color: #cce5ff;
+    background-color: #CA782D; /* highlight orange */
     font-weight: bold;
+    border: 2px solid #7DA797; /* soft green border */
   }
   
-  .hidden {
-    display: none;
+  button {
+    background-color: #7DA797; /* button green */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
   }
   
+  button:hover {
+    background-color: #90A47A;
+  }
+  
+  /* Result background variations */
   .result-batrick {
-    background-color: #e0f7ec;
+    background-color: #E1DAC3;
   }
   
   .result-rocky {
-    background-color: #ffe9d6;
+    background-color: #ABBB99;
   }
   
   #result-container {
     transition: background-color 0.5s ease;
   }
   
+  .hidden {
+    display: none;
+  }
