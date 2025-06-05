@@ -1,6 +1,7 @@
 const questions = [
     {
       question: "Την μπανανόφλουδα την πετάς:",
+      image: "images/banana-peel.png",
       answers: [
         { text: "Στον καφέ κάδο", type: "rocky" },
         { text: "Στο πεζοδρόμιο (Κατά λάθος πάντα!)", type: "batrick" }
@@ -8,27 +9,31 @@ const questions = [
     },
     {
       question: "Τα οργανικά απόβλητα τα ρίχνεις:",
+      image: "images/organic-trash.png",
       answers: [
         { text: "Στον κήπο του γείτονα (Ουπς!)", type: "batrick" },
         { text: "Στον κομποστοποιητή σου", type: "rocky" }
       ]
     },
     {
-      question: "Με τα παλιά μπλουζάκια φτιάχνεις:",
+      question: "Tα παλιά μπλουζάκια:",
+      image: "images/old-shirt.png",
       answers: [
         { text: "Τα βάζεις στον μωβ κάδο", type: "rocky" },
-        { text: "Σκιάχτρα", type: "batrick" }
+        { text: "Τα κάνεις σκιάχτρα", type: "batrick" }
       ]
     },
     {
-      question: "Το λάδι το χρησιμοποιείς:",
+      question: "Το χρησιμοποιημένο λάδι:",
+      image: "images/oil.png",
       answers: [
-        { text: "Για ξεμάτιασμα", type: "batrick" },
+        { text: "Το χρησιμοποιείς για ξεμάτιασμα", type: "batrick" },
         { text: "Το αποθηκεύεις σωστά για επαναχρησιμοποίηση", type: "rocky" }
       ]
     },
     {
       question: "Το βάζο της γιαγιάς έσπασε:",
+      image: "images/broken-vase.png",
       answers: [
         { text: "Δίνεις δεύτερη ζωή με εποξική ρητίνη", type: "rocky" },
         { text: "Επιτέλους να πεταχτεί μαζί με το σεμεδάκι", type: "batrick" }
@@ -36,13 +41,15 @@ const questions = [
     },
     {
       question: "Η κλεμμένη ζακέτα του αδελφού σου τρύπησε:",
+      image: "images/patched-jacket.png",
       answers: [
         { text: "Την μπαλώνεις κρυφά", type: "batrick" },
         { text: "Του την δίνεις να την πάει για ανακύκλωση", type: "rocky" }
       ]
     },
     {
-      question: "Οι μπαταρίες από το air condition στη δουλειά τελείωσαν... τι λες στο αφεντικό σου;",
+      question: "Οι μπαταρίες από το τηλεκοντρόλ του air condition στη δουλειά τελείωσαν... τι λες στο αφεντικό σου;",
+      image: "images/ac-controller.png",
       answers: [
         { text: "Βάλ’ τες εκεί που ξέρεις", type: "batrick" },
         { text: "Να αιτηθούμε έναν κάδο ΑΦΗΣ", type: "rocky" }
@@ -50,6 +57,7 @@ const questions = [
     },
     {
       question: "Βρίσκεις τη συλλογή με τα αγαπημένα σου κόμικ στο παιδικό σου δωμάτιο:",
+      image: "images/comic.png",
       answers: [
         { text: "Τα πουλάς σαν σπάνια συλλογή στο διαδίκτυο", type: "batrick" },
         { text: "Τα πας στην ανακύκλωση", type: "rocky" }
@@ -57,6 +65,7 @@ const questions = [
     },
     {
       question: "Το κεσεδάκι από το γιαούρτι:",
+      image: "images/yogurt.png",
       answers: [
         { text: "Φυτεύεις μέσα φακές και τις καμαρώνεις που μεγαλώνουν", type: "rocky" },
         { text: "Σκέφτεσαι να το ρίξεις σε κάποιον… αφού το γιαούρτι χρησιμοποιείται σαν μάσκα προσώπου", type: "batrick" }
@@ -92,6 +101,9 @@ const questions = [
   const resultTitle = document.getElementById("result-title");
   const resultDescription = document.getElementById("result-description");
   const resultPrompt = document.getElementById("result-prompt");
+  const questionImage = document.getElementById("question-image");
+  const resultImage = document.getElementById("result-image");
+  
   
   document.getElementById("start-button").addEventListener("click", () => {
     introContainer.classList.add("hidden");
@@ -108,6 +120,8 @@ const questions = [
   function showQuestion() {
     const currentQuestion = questions[currentQuestionIndex];
     questionText.textContent = currentQuestion.question;
+    questionImage.src = currentQuestion.image; // 👈 set image
+    questionImage.alt = `Εικόνα για την ερώτηση ${currentQuestionIndex + 1}`;
     answerButtons.innerHTML = "";
     nextButton.classList.add("hidden");
   
@@ -154,7 +168,16 @@ const questions = [
     resultTitle.textContent = resultTitles[resultType];
     resultDescription.textContent = resultDescriptions[resultType];
     resultPrompt.textContent = "Θέλεις να ξαναπαίξεις για να δεις αν θα βγάλεις άλλο αποτέλεσμα;";
-  }
+  
+    // Set image based on result
+    if (resultType === "batrick") {
+        resultImage.src = "images/batrick.png";
+        resultImage.alt = "Εικόνα Μπάτρικ";
+    } else if (resultType === "rocky") {
+        resultImage.src = "images/rocky.png";
+        resultImage.alt = "Εικόνα Ρόκι";
+    }
+}
   
   function restartQuiz() {
     resultContainer.classList.add("hidden");

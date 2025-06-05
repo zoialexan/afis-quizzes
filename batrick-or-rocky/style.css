@@ -47,6 +47,21 @@ body {
   #answer-buttons button:hover {
     background-color: #90A47A;
   }
+
+  #result-prompt {
+    font-style: italic;
+    font-weight: light;
+    color:#535353;
+    margin-top: 20px;
+  }
+
+  #result-title {
+    display: block;
+    font-size: 3rem; /* You can adjust this value as needed */
+    font-weight: bold;
+    margin-top: 10px;
+    color: #7DA797; /* Optional: matching your palette */
+  }
   
   /* Selected answer stays green and bold */
   .selected {
@@ -72,6 +87,23 @@ body {
   /* Keep same color on hover */
   .nav-button:hover {
     background-color: #CA782D;
+  }
+
+  .question-img {
+    width: 100%;
+    max-height: 360px;
+    object-fit: contain;
+    margin-bottom: 15px;
+    border-radius: 12px;
+  }
+
+  .result-img {
+    width: 100%;
+    max-width: 400px;
+    max-height: 360px;
+    margin: 20px auto;
+    display: block;
+    border-radius: 12px;
   }
   
   /* Result backgrounds */
