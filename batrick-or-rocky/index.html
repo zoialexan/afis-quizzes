@@ -11,13 +11,13 @@
   <div id="intro-container">
     <h1>Ποιος χαρακτήρας είσαι;</h1>
     <p>Μάθε αν είσαι η Μπάτρικ ή ο Ρόκι!</p>
-    <button id="start-button">Ξεκίνα το Quiz</button>
+    <button id="start-button" class="nav-button">Ξεκίνα το Quiz</button>
   </div>
 
   <div id="quiz-container" class="hidden">
     <p id="question-text"></p>
     <div id="answer-buttons"></div>
-    <button id="next-button" class="hidden">Επόμενη ερώτηση</button>
+    <button id="next-button" class="nav-button hidden">Επόμενη ερώτηση</button>
   </div>
 
   <div id="result-container" class="hidden">
@@ -25,7 +25,7 @@
     <span id="result-title"></span>
     <p id="result-description"></p>
     <p id="result-prompt"></p>
-    <button onclick="restartQuiz()">Παίξε ξανά</button>
+    <button class="nav-button" onclick="restartQuiz()">Παίξε ξανά</button>
   </div>
 
   <script src="script.js"></script>

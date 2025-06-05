@@ -1,70 +1,86 @@
 body {
     font-family: 'Geologica', sans-serif;
-    background-color: #F4EFE9; /* soft cream background */
+    background-color: #F4EFE9;
     margin: 0;
     padding: 20px;
     text-align: center;
-    color: #333;
   }
   
-  #quiz-container, #result-container, #intro-container {
+  #intro-container,
+  #quiz-container,
+  #result-container {
     max-width: 600px;
     margin: 0 auto;
-    background: #E1DAC3; /* light beige card */
-    padding: 25px;
-    border-radius: 20px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    background-color: #E1DAC3;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.5s ease;
+  }
+  
+  h1, h2 {
+    color: #333;
+    margin-bottom: 1rem;
+  }
+  
+  #question-text {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #333;
   }
   
   #answer-buttons button {
     display: block;
     width: 100%;
-    margin: 12px 0;
-    padding: 14px;
+    margin: 10px 0;
+    padding: 12px;
     font-size: 1rem;
-    border-radius: 12px;
+    border-radius: 8px;
     border: 2px solid transparent;
-    background-color: #ABBB99; /* muted green */
-    color: white;
-    cursor: pointer;
+    background-color: #ABBB99;
+    color: #1c1c1c;
     transition: background-color 0.3s ease, border 0.3s ease;
-  }
-  
-  #answer-buttons button:hover {
-    background-color: #90A47A; /* darker green on hover */
-  }
-  
-  .selected {
-    background-color: #CA782D; /* highlight orange */
-    font-weight: bold;
-    border: 2px solid #7DA797; /* soft green border */
-  }
-  
-  button {
-    background-color: #7DA797; /* button green */
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 10px;
-    font-size: 1rem;
     cursor: pointer;
   }
   
-  button:hover {
+  /* Hover effect for answers */
+  #answer-buttons button:hover {
     background-color: #90A47A;
   }
   
-  /* Result background variations */
+  /* Selected answer stays green and bold */
+  .selected {
+    background-color: #90A47A !important;
+    font-weight: bold;
+    border: 2px solid #7DA797;
+  }
+  
+  /* Navigation buttons (Start, Next, Play Again) */
+  .nav-button {
+    background-color: #CA782D;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 24px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Keep same color on hover */
+  .nav-button:hover {
+    background-color: #CA782D;
+  }
+  
+  /* Result backgrounds */
   .result-batrick {
-    background-color: #E1DAC3;
+    background-color: #E0F7EC;
   }
   
   .result-rocky {
-    background-color: #ABBB99;
-  }
-  
-  #result-container {
-    transition: background-color 0.5s ease;
+    background-color: #FFE9D6;
   }
   
   .hidden {
