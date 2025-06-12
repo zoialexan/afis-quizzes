@@ -24,7 +24,7 @@ const questions = [
       ]
     },
     {
-      question: "Το χρησιμοποιημένο λάδι:",
+      question: "Το μαγειρεμένο λάδι:",
       image: "images/oil.png",
       answers: [
         { text: "Το χρησιμοποιείς για ξεμάτιασμα", type: "batrick" },
