@@ -1,7 +1,7 @@
 const questions = [
     {
       question: "Την μπανανόφλουδα την πετάς:",
-      image: "images/banana-peel.png",
+      image: "images/street.png",
       answers: [
         { text: "Στον καφέ κάδο", type: "rocky" },
         { text: "Στο πεζοδρόμιο (Κατά λάθος πάντα!)", type: "batrick" }
@@ -9,7 +9,7 @@ const questions = [
     },
     {
       question: "Τα οργανικά απόβλητα τα ρίχνεις:",
-      image: "images/organic-trash.png",
+      image: "images/garden.png",
       answers: [
         { text: "Στον κήπο του γείτονα (Ουπς!)", type: "batrick" },
         { text: "Στον κομποστοποιητή σου", type: "rocky" }
@@ -17,7 +17,7 @@ const questions = [
     },
     {
       question: "Tα παλιά μπλουζάκια:",
-      image: "images/old-shirt.png",
+      image: "images/field.png",
       answers: [
         { text: "Τα βάζεις στον μωβ κάδο", type: "rocky" },
         { text: "Τα κάνεις σκιάχτρα", type: "batrick" }
@@ -25,7 +25,7 @@ const questions = [
     },
     {
       question: "Το μαγειρεμένο λάδι:",
-      image: "images/oil.png",
+      image: "images/kitchen.png",
       answers: [
         { text: "Το χρησιμοποιείς για ξεμάτιασμα", type: "batrick" },
         { text: "Το αποθηκεύεις σωστά για επαναχρησιμοποίηση", type: "rocky" }
@@ -33,7 +33,7 @@ const questions = [
     },
     {
       question: "Το βάζο της γιαγιάς έσπασε:",
-      image: "images/broken-vase.png",
+      image: "images/livingroom.png",
       answers: [
         { text: "Δίνεις δεύτερη ζωή με εποξική ρητίνη", type: "rocky" },
         { text: "Επιτέλους να πεταχτεί μαζί με το σεμεδάκι", type: "batrick" }
