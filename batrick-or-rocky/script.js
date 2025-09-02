@@ -9,7 +9,7 @@ const questions = [
     },
     {
       question: "Τα οργανικά απόβλητα τα ρίχνεις:",
-      image: "images/garden.png",
+      image: "images/4.png",
       answers: [
         { text: "Στον κήπο του γείτονα (Ουπς!)", type: "batrick" },
         { text: "Στον κομποστοποιητή σου", type: "rocky" }
@@ -17,7 +17,7 @@ const questions = [
     },
     {
       question: "Tα παλιά μπλουζάκια:",
-      image: "images/field.png",
+      image: "images/6.png",
       answers: [
         { text: "Τα βάζεις στον μωβ κάδο", type: "rocky" },
         { text: "Τα κάνεις σκιάχτρα", type: "batrick" }
@@ -25,7 +25,7 @@ const questions = [
     },
     {
       question: "Το μαγειρεμένο λάδι:",
-      image: "images/kitchen.png",
+      image: "images/8.png",
       answers: [
         { text: "Το χρησιμοποιείς για ξεμάτιασμα", type: "batrick" },
         { text: "Το αποθηκεύεις σωστά για επαναχρησιμοποίηση", type: "rocky" }
@@ -33,7 +33,7 @@ const questions = [
     },
     {
       question: "Το βάζο της γιαγιάς έσπασε:",
-      image: "images/livingroom.png",
+      image: "images/10.png",
       answers: [
         { text: "Δίνεις δεύτερη ζωή με εποξική ρητίνη", type: "rocky" },
         { text: "Επιτέλους να πεταχτεί μαζί με το σεμεδάκι", type: "batrick" }
@@ -41,7 +41,7 @@ const questions = [
     },
     {
       question: "Η κλεμμένη ζακέτα του αδελφού σου τρύπησε:",
-      image: "images/bedroom.png",
+      image: "images/12.png",
       answers: [
         { text: "Την μπαλώνεις κρυφά", type: "batrick" },
         { text: "Του την δίνεις να την πάει για ανακύκλωση", type: "rocky" }
@@ -49,7 +49,7 @@ const questions = [
     },
     {
       question: "Οι μπαταρίες από το τηλεκοντρόλ του air condition στη δουλειά τελείωσαν... τι λες στο αφεντικό σου;",
-      image: "images/office.png",
+      image: "images/14.png",
       answers: [
         { text: "Βάλ’ τες εκεί που ξέρεις", type: "batrick" },
         { text: "Να αιτηθούμε έναν κάδο ΑΦΗΣ", type: "rocky" }
@@ -57,7 +57,7 @@ const questions = [
     },
     {
       question: "Βρίσκεις τη συλλογή με τα αγαπημένα σου κόμικ στο παιδικό σου δωμάτιο:",
-      image: "images/yardsale.png",
+      image: "images/16.png",
       answers: [
         { text: "Τα πουλάς σαν σπάνια συλλογή στο διαδίκτυο", type: "batrick" },
         { text: "Τα πας στην ανακύκλωση", type: "rocky" }
@@ -65,7 +65,7 @@ const questions = [
     },
     {
       question: "Το κεσεδάκι από το γιαούρτι:",
-      image: "images/kitchen2.png",
+      image: "images/18.png",
       answers: [
         { text: "Φυτεύεις μέσα φακές και τις καμαρώνεις που μεγαλώνουν", type: "rocky" },
         { text: "Σκέφτεσαι να το ρίξεις σε κάποιον… αφού το γιαούρτι χρησιμοποιείται σαν μάσκα προσώπου", type: "batrick" }
