@@ -99,8 +99,8 @@ body {
 
   .result-img {
     width: 100%;
-    max-width: 400px;
-    max-height: 360px;
+    max-width: 600px;
+    max-height: 560px;
     margin: 20px auto;
     display: block;
     border-radius: 12px;

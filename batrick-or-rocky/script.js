@@ -74,12 +74,12 @@ const questions = [
   ];
   
   const resultTitles = {
-    batrick: "Η Μπάτρικ!",
+    batrick: "Η Batrick!",
     rocky: "Ο Ρόκι!"
   };
   
   const resultDescriptions = {
-    batrick:
+  batrick:
     "Έχεις πολλή φαντασία! Η δεύτερη ζωή που δίνεις στα απόβλητα αποτελεί μέρος του upcycling, αλλά" +
     " δεν ξέρουμε κατά πόσο συμφωνεί… ο γείτονας και το αφεντικό! Αν βρεθείς ποτέ σε δίλημμα για την τύχη των" +
     " αποβλήτων, ένας φίλος σαν τον Ρόκι είναι εκεί για να σε καθοδηγήσει για τον σωστό δρόμο της ανακύκλωσης!",
@@ -120,7 +120,7 @@ const questions = [
   function showQuestion() {
     const currentQuestion = questions[currentQuestionIndex];
     questionText.textContent = currentQuestion.question;
-    questionImage.src = currentQuestion.image; // 👈 set image
+    questionImage.src = currentQuestion.image; 
     questionImage.alt = `Εικόνα για την ερώτηση ${currentQuestionIndex + 1}`;
     answerButtons.innerHTML = "";
     nextButton.classList.add("hidden");
