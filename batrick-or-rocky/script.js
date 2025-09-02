@@ -1,7 +1,7 @@
 const questions = [
     {
       question: "Την μπανανόφλουδα την πετάς:",
-      image: "images/street.png",
+      image: "images/2.png",
       answers: [
         { text: "Στον καφέ κάδο", type: "rocky" },
         { text: "Στο πεζοδρόμιο (Κατά λάθος πάντα!)", type: "batrick" }
